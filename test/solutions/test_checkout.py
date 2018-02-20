@@ -9,7 +9,7 @@ class TestCheckout(unittest.TestCase):
 
             self.assertEqual(checkout('AAAABBC'), 245)
 
-            self.assertEqual(checkout('E'), -1)
+            self.assertEqual(checkout('Z'), -1)
 
             self.assertEqual(checkout('CCC'), 60)
 
