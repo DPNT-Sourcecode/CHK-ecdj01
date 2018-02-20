@@ -15,7 +15,7 @@ class TestCheckout(unittest.TestCase):
 
     def test_E_discount(self):
         self.assertEqual(checkout('AAABBBCDEE'), 290)
-        self.assertEqual(checkout('AAABBCDEE'), 290)
+        self.assertEqual(checkout('AAABBCDEE'), 275)
 
 if __name__ == '__main__':
     unittest.main()
