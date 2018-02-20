@@ -21,10 +21,10 @@ class TestCheckout(unittest.TestCase):
         self.assertEqual(checkout('AAAA'), 180)
         self.assertEqual(checkout('AAAAA'), 200)
         self.assertEqual(checkout('AAAAAA'), 250)
-        self.assertEqual(checkout('AAAAAAA'), 275)
-        self.assertEqual(checkout('AAAAAAAA'), 290)
-        self.assertEqual(checkout('AAAAAAAAA'), 275)
-        self.assertEqual(checkout('AAAAAAAAA'), 275)
+        self.assertEqual(checkout('AAAAAAA'), 300)
+        self.assertEqual(checkout('AAAAAAAA'), 330)
+        self.assertEqual(checkout('AAAAAAAAA'), 380)
+        self.assertEqual(checkout('AAAAAAAAAA'), 400)
 
 if __name__ == '__main__':
     unittest.main()
