@@ -16,6 +16,9 @@ class TestCheckout(unittest.TestCase):
     def test_E_discount(self):
         self.assertEqual(checkout('AAABBBCDEE'), 290)
         self.assertEqual(checkout('AAABBCDEE'), 275)
+        self.assertEqual(checkout('EEB'), 80)
+        self.assertEqual(checkout('EEEB'), 120)
+        self.assertEqual(checkout('EEEEBB'), 160)
 
     def test_A_new_discount(self):
         self.assertEqual(checkout('AAAA'), 180)
